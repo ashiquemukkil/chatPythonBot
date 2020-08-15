@@ -8,13 +8,13 @@ from echobot import EchoBot
 app = Flask(__name__)
 loop = asyncio.get_event_loop()
 
-botadaptersettings = BotFrameworkAdapterSettings("", "")
+botadaptersettings = BotFrameworkAdapterSettings("23272d4a-53a6-4535-a4bf-6bb9264fd0ee", "wl_RZ_X42_pDblS4lvdHd9vb46~6t~_oX1")
 botadapter = BotFrameworkAdapter(botadaptersettings)
 
 ebot = EchoBot()
 
 
-@app.route("/api/messages", methods=["POST"])
+@app.route("/messages", methods=["POST"])
 def messages():
     if "application/json" in request.headers["content-type"]:
         jsonmessage = request.json
