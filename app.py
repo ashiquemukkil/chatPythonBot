@@ -8,7 +8,7 @@ from echobot import EchoBot
 app = Flask(__name__)
 loop = asyncio.get_event_loop()
 
-botadaptersettings = BotFrameworkAdapterSettings("23272d4a-53a6-4535-a4bf-6bb9264fd0ee", "wl_RZ_X42_pDblS4lvdHd9vb46~6t~_oX1")
+botadaptersettings = BotFrameworkAdapterSettings("8d054fa1-23ec-43d1-bb8a-4dd80cdccc12", "2O-XN-Bybx6-DF_Xh805N.moi0.SPZ5b8c")
 botadapter = BotFrameworkAdapter(botadaptersettings)
 
 ebot = EchoBot()
@@ -31,4 +31,4 @@ def messages():
 
 
 if __name__ == '__main__':
-    app.run('localhost', 3978)
+    app.run('https://ambrapalichatbot.azurewebsites.net', 3978)
