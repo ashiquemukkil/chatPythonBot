@@ -31,4 +31,4 @@ def messages():
 
 
 if __name__ == '__main__':
-    app.run('https://ambrapalichatbot.azurewebsites.net', 3978)
+    app.run('https://testambrapalibot.azurewebsites.net', 3978)
