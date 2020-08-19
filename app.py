@@ -14,7 +14,7 @@ botadapter = BotFrameworkAdapter(botadaptersettings)
 ebot = EchoBot()
 
 print("working#########################")
-@app.route("/messages", methods=["POST"])
+@app.route("api/messages", methods=["POST"])
 def messages():
     if "application/json" in request.headers["content-type"]:
         jsonmessage = request.json
